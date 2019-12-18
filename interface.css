@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'Charcoal';
+	font-style: normal;
+	font-weight: 400;
+	src: url("/resources/fonts/Charcoal.ttf");
+}
+body {
+	background: #000;
+}
+* {
+	font-size: 12px;
+	font-family: 'Charcoal';
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.bg {
+	/*background-image:*/
+	border-radius: 8px;
+	background: rgb(49,66,123);
+	width: 1024px;
+	height: 768px;
+	margin: auto;
+	cursor: url("/resources/mouse.png"), auto;
+}
+a.links {
+	font-size: 14px;
+	display: block;
+	color: #090909;
+	background-color: #dcdcdc;
+	border-radius: 4px;
+	border: 1px solid #090909;
+	padding: 1px 12px 1px 12px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: inset 1px 1px 0px #dddddd, inset 2px 2px 0px #ffffff, inset -1px -1px 0px #777777, inset -2px -2px 0px #aaaaaa;
+	cursor: url("/videowelder.xyz/files/mouse.png"), auto;
+}
+	a.links:active {
+		color: #fefefe;
+		background-color: #666666;
+		box-shadow: inset 1px 1px 0px #444444, inset 2px 2px 0px #555555, inset -1px -1px 0px #888888, inset -2px -2px 0px #777777;
+	}
+li {
+	display: block;
+	padding: 15px 20px 0px 0px;
+}
+td.lines {
+	border-top: 1px solid #ffffff;
+	text-align: center;
+	padding: 0px 0px 0px 0px 0px;
+	box-shadow: inset 0px 1px 0px #777777;
+}
+.highlight_panel {
+	background-color: #eeeeee;
+	width: 400px;
+	box-shadow: inset -1px -1px 0px #999999, inset -2px -2px 0px #bbbbbb, inset 1px 1px 0px #cccccc, inset 2px 2px 0px #ffffff;
+	border-right: 1px solid #090909;
+}
+.taskbar {
+	background: rgb(222,222,222);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: inherit;
+	height: 19px;
+	display: inline-flex;
+	text-align: center;
+	border-bottom: 1px solid #090909;
+	box-shadow: inset -1px -1px #999999, inset 1px 1px #fff;
+} 
+	.taskbar div.sep {
+		width: 6px;
+		height: inherit;
+		box-shadow: 1px 0px rgb(156,156,156), -2px 0px 0px -1px rgb(255,255,255);
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+	.taskbar div.special {
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+	.taskbar div.options {
+		width:100%;
+		display:flex;
+	}
+	.taskbar div.options a {
+		padding: 0px 5px 0px 5px;
+		align-self: center;
+	}
+		.taskbar div.options a:active {
+			background: #999999;
+			color: #fff;
+		}
+.main_border {
+	width: max-content;
+	text-align: center;
+	border: 1px solid #090909;
+	background-color: #cccccc;
+	color: #090909;
+	box-shadow: 2px 2px 0px #090909, inset 1px 1px 0px #ffffff, inset -1px -1px 0px #999999;
+	padding: 4px 4px 4px 4px;
+}
+.sub_border {
+	display: block;
+	max-height: 700px;
+	background-color: #dcdcdc;
+	bottom: 3px;
+	border: 1px solid #010101;
+	box-shadow: 0px 1px #ffffff, 1px 1px #ffffff, 1px 0px #ffffff, 0px -1px #8e8e8e, -1px -1px #8e8e8e, -1px 0px #8e8e8e;
+}
+.titlebar {
+	display: flex;
+	height: 16px;
+	width: 100%;
+}
+	.titlebar div.button {
+		width: 9px;
+		height: 9px;
+		border: 1px solid rgb(33,33,33);
+		background-image: linear-gradient(-45deg, #ffffff, rgb(239,239,239), rgb(222,222,222), rgb(206,206,206), rgb(189,189,189), rgb(173,173,173), rgb(156,156,156));
+		box-shadow: inset 1px 1px #CECECE, inset -1px -1px #8C8C8C, 0px 1px #ffffff, 1px 1px #ffffff, 1px 0px #ffffff, -0px -1px #8C8C8C, -1px -1px #8C8C8C, -1px -0px #8C8C8C;
+		display: inline-block;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+		.titlebar div.button:active {
+			background-image: linear-gradient(135deg, #444444, rgb(85,85,85), rgb(102,102,102), rgb(119,119,119), rgb(136,136,136), rgb(153,153,153), rgb(170,170,170));
+			box-shadow: inset -1px -1px 0px #999999, .75px .75px 0px .5px #ffffff, -.75px -.75px 0px .5px #8C8C8C;
+		}
+	.titlebar div.title {
+		height: 12px;
+		background: repeating-linear-gradient(0deg,#707070,#707070 1px,#ffffff 1px,#ffffff 2px);
+		font-size: 13px;
+		text-align: center;
+		width: 100%;
+		margin: -1px 5px 0px 5px;
+		min-width: 200px;
+		border-right: 1px dotted #cccccc;
+		border-left: 1px dotted #cccccc;
+	}
+		.titlebar span {
+		flex-shrink: 0;
+		flex-grow: 0;
+		margin-top: -3px;
+	}
