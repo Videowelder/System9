@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Videowelder Hub</title>
+<link rel="icon" type="image/png" href="/resources/logo.png">
+<body>
+    <div class="bg">
+        <div class="taskbar">
+            <div class="special" style="width: 44px;border-top-left-radius:10px;background-image: url('/videowelder.xyz/files/projects/os9/root/shell/apple.png');background-repeat:no-repeat;background-position:center;"></div>
+            <div class="options">
+                <a ondragstart="return false;">File</a>
+                <a ondragstart="return false;">Edit</a>
+                <a ondragstart="return false;">View</a>
+                <a ondragstart="return false;">Windows</a>
+                <a ondragstart="return false;">Special</a>
+                <a ondragstart="return false;">Help</a>
+            </div>
+            <div class="special" style="width: 128px;align-self: center;text-align:end;padding-right:6px;">5:44 PM</div>
+            <div class="sep"></div>
+            <div class="special" style="width: 85px;border-top-right-radius:10px;align-self: center;">Finder</div>
+        </div>
+        <div id="Main" class="main_border">
+            <div class="titlebar">
+                <div class="button" onclick="history.go(-1)"></div>
+                <div class="title"></div>
+                <span>Window</span>
+                <div class="title"></div>
+                <div class="button" onclick="ToggleDisp()" style="margin-right:5px;">
+                    <div style="height:2px;border-top:1px solid #090909;transform: translate(0%,100%);"></div>
+                </div>
+                <div class="button" onclick="ToggleDisp()">
+                    <div style="height:1px;border-top:1px solid #090909;border-bottom:1px solid #090909;transform: translate(0%,100%);"></div>
+                </div>
+            </div>
+            <div id="Sub" class="sub_border">
+            </div>
+        </div>
+    </div>
+    <script>
+        function ToggleDisp() {
+            if (document.getElementById("Sub").style.display != "none") {
+                document.getElementById("Sub").style.display = "none";
+                document.getElementById("Main").style.padding = "4px 4px 0px 4px";
+            } else if (document.getElementById("Sub").style.display == "none") {
+                document.getElementById("Sub").style.display = "block";
+                document.getElementById("Main").style.padding = "4px 4px 4px 4px";
+            }
+        }
+    </script>
+</body>
