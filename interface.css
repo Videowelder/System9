@@ -2,7 +2,7 @@
 	font-family: 'Charcoal';
 	font-style: normal;
 	font-weight: 400;
-	src: url("/resources/fonts/Charcoal.ttf");
+	src: url("/System9/files/charcoal.ttf");
 }
 body {
 	background: #000;
@@ -24,7 +24,7 @@ body {
 	width: 1024px;
 	height: 768px;
 	margin: auto;
-	cursor: url("/resources/mouse.png"), auto;
+	cursor: url("/System9/files/shell/mouse.png"), auto;
 }
 a.links {
 	font-size: 14px;
@@ -37,7 +37,7 @@ a.links {
 	text-align: center;
 	text-decoration: none;
 	box-shadow: inset 1px 1px 0px #dddddd, inset 2px 2px 0px #ffffff, inset -1px -1px 0px #777777, inset -2px -2px 0px #aaaaaa;
-	cursor: url("/videowelder.xyz/files/mouse.png"), auto;
+	cursor: url("/files/shell/mouse.png"), auto;
 }
 	a.links:active {
 		color: #fefefe;
